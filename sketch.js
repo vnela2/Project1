@@ -76,12 +76,12 @@ function draw()
             angle = changeAngle(direction);
  
             var distance = dist(xPosition, yPosition, newXPos, newYPos);
-            if (distance >= minLength) 
-            {
+            //if (distance >= minLength) 
+           // {
                 strokeWeight(w);
                 stroke(x,y,z);
                 line(xPosition, yPosition, newXPos, newYPos);
-            }
+           // }
  
             newXPos = xPosition;
             newYPos = yPosition;
@@ -109,6 +109,5 @@ function keyTyped()
     {
         speed = speed - 1;
     }
-    console.log(speed);
 }
  
